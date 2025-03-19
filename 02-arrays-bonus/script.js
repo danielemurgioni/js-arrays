@@ -18,8 +18,18 @@ console.log(reversedTeachers);
 
 const longNames = teachers;
 
+//ho letto male la consegna, pensavo di dover stampare solo i nomi con lunghezza uguale a 5 caratteri, lascio la soluzione sbagliata come ricordo!
+
+/* for(i=0; i<longNames.length; i++){
+  if(longNames[i].length!=5 && longNames[i].length!=6 && longNames[i].length!=4){ 
+    console.log(longNames[i]) 
+  };
+} */
+
+//qui sotto c'è la vera soluzione del secondo esercizio...
+
 for(i=0; i<longNames.length; i++){
-  if(longNames[i].length>=5 && longNames[i].length!=6 && longNames[i].length!=4){ 
+  if(longNames[i].length>=5){ 
     console.log(longNames[i])
   };
 }
@@ -31,7 +41,8 @@ console.log(teachers);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+
+const isFabioPresent = teachers;
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = null;
