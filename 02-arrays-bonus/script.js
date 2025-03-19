@@ -22,7 +22,7 @@ const longNames = teachers;
 
 /* for(i=0; i<longNames.length; i++){
   if(longNames[i].length!=5 && longNames[i].length!=6 && longNames[i].length!=4){ 
-    console.log(longNames[i]) 
+    console.log(longNames[i]);
   };
 } */
 
@@ -30,7 +30,7 @@ const longNames = teachers;
 
 for(i=0; i<longNames.length; i++){
   if(longNames[i].length>=5){ 
-    console.log(longNames[i])
+    console.log(longNames[i]);
   };
 }
 
@@ -50,5 +50,7 @@ for(i=0; i<isFabioPresent.length; i++){
   }
 }
 
-// 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+// 5. Unisci tutti gli insegnanti nell'array teachers in una stringa separata da virgole e salvala nella variabile teachersString
+
+const teachersString = teachers.toString();
+console.log(teachersString);
