@@ -19,12 +19,15 @@ console.log(reversedTeachers);
 const longNames = teachers;
 
 for(i=0; i<longNames.length; i++){
-  if(longNames[i].length!=2 && longNames[i].length!=6 && longNames[i].length!=4){
+  if(longNames[i].length>=5 && longNames[i].length!=6 && longNames[i].length!=4){ 
     console.log(longNames[i])
   };
 }
 
 // 3. Rimuovi 'Ed' dall'array teachers
+
+teachers.splice(5,1);
+console.log(teachers);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
